@@ -1,4 +1,4 @@
-package oop;
+package oop.Exceptions;
 
 public class BlackCatException extends RuntimeException {
     private String chosenName;

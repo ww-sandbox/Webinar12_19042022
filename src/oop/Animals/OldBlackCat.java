@@ -1,4 +1,4 @@
-package oop;
+package oop.Animals;
 
 public class OldBlackCat {
     //Spróbuj dzieziczenia po 'BlackCat'

@@ -1,4 +1,4 @@
-package oop;
+package oop.Animals;
 
 public abstract class Animal {
     private String name;

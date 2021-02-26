@@ -1,11 +1,15 @@
 package oop;
 
+import oop.Animals.Animal;
+import oop.Animals.Cat;
+import oop.Animals.Dog;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
-public class App {
+public class AnimalsWorld {
     public static void main(String[] args) {
         /*
             PRZED URUCHOMIENIEM KLASY ZAIMPLEMENTUJ KONSTRUKTORY Z PARAMETREM!!

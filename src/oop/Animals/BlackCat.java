@@ -1,4 +1,6 @@
-package oop;
+package oop.Animals;
+
+import oop.Exceptions.BlackCatException;
 
 public final class BlackCat extends Cat {
     private static final String COLOR = "black";

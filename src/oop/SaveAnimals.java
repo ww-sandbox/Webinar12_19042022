@@ -1,11 +1,15 @@
 package oop;
 
+import oop.Animals.Animal;
+import oop.Animals.BlackCat;
+import oop.Animals.Cat;
+import oop.Animals.Dog;
 import oop.FileHelpers.PlainFileWriters;
 import oop.FileHelpers.PlainTextReaders;
 
 import java.io.*;
 
-public class App2 {
+public class SaveAnimals {
     public static void main(String[] args){
         Animal[] animals = new Animal[3];
 
