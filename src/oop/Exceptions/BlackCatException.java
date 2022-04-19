@@ -3,7 +3,7 @@ package oop.Exceptions;
 public class BlackCatException extends RuntimeException {
     private String chosenName;
 
-    BlackCatException(String name){
+    public BlackCatException(String name){
         chosenName = name;
     }
 
