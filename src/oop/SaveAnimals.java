@@ -8,6 +8,7 @@ import oop.FileHelpers.PlainFileWriters;
 import oop.FileHelpers.PlainTextReaders;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class SaveAnimals {
     public static void main(String[] args){
@@ -35,6 +36,7 @@ public class SaveAnimals {
         String[] names2 = PlainTextReaders.readNamesFromFile(file);
         System.out.println(names2.length);
         System.out.println(names2[2]);
+        System.out.println(Arrays.toString(names2));
 
     }
     public static void printName(Animal[] names, int index){

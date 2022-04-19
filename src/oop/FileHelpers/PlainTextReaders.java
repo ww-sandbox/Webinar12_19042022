@@ -12,6 +12,11 @@ public class PlainTextReaders {
             while(scan.hasNextLine()){
                 lines += scan.nextLine() + "\n";
             }
+//            Upewniamy się czy istnieje kolejna linia i dopiero wtedy odczytujemy (hasNextLine) aby uniknąć błędów
+//            while(true){
+//                lines += scan.nextLine() + "\n";
+//            }
+//            Jeśli linia jest niedostępna, a próbujemy ją odczytać pojawią się błędy
         } catch (FileNotFoundException e){
             System.out.println("Plik nie odnaleziony");
             System.out.println(e.getMessage());

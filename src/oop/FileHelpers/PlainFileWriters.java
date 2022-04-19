@@ -24,11 +24,16 @@ public class PlainFileWriters {
                     e.printStackTrace();
                 }
             }
+//            Próba zamknięcia pliku również operuje na pliku, daltego również wymaga obsługi wyjątku
         }
     }
 
     public static void writeNameToFileBuffered(File file, String text){
+//        BufferedWriter bw1 = new BufferedWriter(new FileWriter())
+//        Sposób w jaki tworzylibyśmy instancję readera w 'klasyczny' sposób
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(file, true))) {
+//            Sposób odczytu z wykorzystaniem try-with-resource. Zaletą tej metody jest to, że nie musimy pamiętać o
+//            zamykaniu pliku. Zasoby zostaną zwolnione zaraz po zakończeniu try...catch
             bw.write(text);
             bw.newLine();
         } catch (IOException e) {
